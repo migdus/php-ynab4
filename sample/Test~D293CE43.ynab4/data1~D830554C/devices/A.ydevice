@@ -4,7 +4,7 @@
     "deviceType": "Desktop (AIR), OS:Mac OS 10.14.5",
     "formatVersion": "1.2",
     "friendlyName": "apples-Mac-mini",
-    "hasFullKnowledge": true,
+    "hasFullKnowledge": false,
     "highestDataVersionImported": null,
     "knowledge": "A-67",
     "knowledgeInFullBudgetFile": "A-67",

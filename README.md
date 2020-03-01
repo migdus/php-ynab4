@@ -87,3 +87,20 @@ $ynab->push();
 # Update device knowledge based on new generated diff file
 $ynab->commit();
 ```
+## Running the app with docker
+Using the project directory as the home folder build a new docker image:
+
+```sh
+docker build -t php-ynab4 .
+```
+
+Then run a container using a volume to add what you want to run and add as a param the php file you need to run. For example, here is how you run the sample php file:
+
+```sh
+docker run --rm \
+  # The volume with the files you want to run
+  -v "$PWD"/sample:/sample 
+  php-ynab4 \
+  # The path to the main php file
+  "/sample/index.php"
+```
